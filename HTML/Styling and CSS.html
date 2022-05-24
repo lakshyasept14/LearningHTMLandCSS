@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Implementation</title>
+
+    <!-- Style tag for Internal Styling -->
+    <!-- Here we are styling all h1 headings.-->
+    <style>
+      h1 {
+        color: green;
+        font-size: 45px;
+      }
+    </style>
+    <link rel="stylesheet " href="External.css"/> <!-- This is to link .css file for external styling -->
+  </head>
+
+  <body>
+    <!-- Inline Styling -->
+    <p style="font-size: 25px; color: red">Inline Styling</p>
+
+    <!-- Internal Styling , here styling part is done separately in another style tag element. It is 
+        normally made just before closing head/body tag-->
+    <h1>Internal Styling</h1>
+    <h1>Internal Styling</h1>
+
+    <!-- External Styling , it is done in a separate .css file and could be applied to multiple files from a single .css. One
+    just have to link this .css to there file. as shown in lines above just before closing head tag 
+    (mentioned by comment against it). -->
+    <h2>External Styling</h2>
+  </body>
+</html>

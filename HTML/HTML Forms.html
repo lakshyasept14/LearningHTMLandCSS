@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Elements</title>
+  </head>
+  <body>
+    <!-- Elements of forms -->
+    <h2>Form Elements- Lecture 1</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <br>
+            <label>First Name</label>
+            <input/>
+            <br>
+            <label>Second Name</label>
+            <input/>
+            <br>
+            <label>Address </label>
+            <textarea></textarea>
+            <br>
+            <label>Number of Siblings</label>
+            <select>
+              <option>One</option>
+              <option>Two</option>
+              <option>Three</option>
+              <option>Four</option>
+              <option>Five</option>
+              <option>Six</option>
+            </select>
+            <br>
+            <br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+    
+    <!-- Form Input Types -->
+    <h2>Form Input Types- Lecture 2</h2>
+    <form>
+      <fieldset>
+        <legend>Different Input Types</legend>
+        <br>
+        <label>A Text Input</label>
+        <input type="text"/>
+        <br>
+        <label>A Password Input</label>
+        <input type="password"/>
+        <br>
+        <label>Radio Button Inputs</label>
+        <input type="radio">Option1</input>
+        <input type="radio">Option2</input>
+        <input type="radio">Option3</input>
+        <br>
+        <label>Checkbox Button</label>
+        <input type="checkbox">Option1</input>
+        <input type="checkbox">Option2</input>
+        <input type="checkbox">Option3</input>
+        <br>
+        <label>Button</label>
+        <input type="button" value="Button"/>
+      </fieldset>
+    </form>
+
+
+    <!-- Form Input Types with their attributes-->
+    <h2>Form Attributes- Lecture 3</h2>
+    <!--Proper attributes with elements are necessary for implementing proper submission to server.-->
+    <form>
+      <fieldset>
+        <legend>Form Attributes- The way forms are actually designed.</legend>
+        <p>To see the diffrence please visit the code.</p>
+        <br>
+
+        <label for="testtext">A Text Input</label><!-- This label is associated with id testtext, and can be 
+        recognised with for attribute.-->
+        <input id="testtext" name="testtext" type="text"/>
+        <!--Here for and id are both matched. The name attribute is assigned to the input submitted to server
+        where one can capture it by either name or id.-->
+
+        <!-- Name attribute is required for submission to server, whereas id is used for javascript and css purposes.-->
+
+        <br>
+        <label for="address">Address</label>
+        <textarea id="address" rows="5" cols="40"></textarea>
+
+        <br>
+        <label>A Password Input</label>
+        <input type="password"/>
+        
+        <br>
+        <label>Radio Button Inputs</label>
+        <input type="radio">Option1</input>
+        <input type="radio">Option2</input>
+        <input type="radio">Option3</input>
+        <br>
+        <label>Checkbox Button</label>
+        <input type="checkbox">Option1</input>
+        <input type="checkbox">Option2</input>
+        <input type="checkbox">Option3</input>
+        <br>
+        <label>Button</label>
+        <input type="button" value="Button"/>
+      </fieldset>
+    </form>
+
+  </body>
+</html>

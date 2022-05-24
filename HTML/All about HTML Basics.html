@@ -1,0 +1,219 @@
+<!DOCTYPE html><!-- This show the type of document to browser.-->
+<html lang="EN-US"> <!-- This is an example of tag, there is always an opening tag and a closing tag. Find closing tag below somewhere.
+            These are also called elements.-->
+
+
+
+<head> <!-- This is about the page. The title tag used in it appear on the browser window title bar.-->
+    
+    <!--These meta tags below are used to index page(provide data about page) for SEO, There are many more metatags.-->
+    <meta charset="utf-8">
+    <meta name="description" content="About HTML Basics">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Lakshya">
+    
+    <title>Sample Content</title> <!-- This is an example of nested element. This title element is nested within a head element.-->
+</head>
+
+
+
+
+<body> <!-- This is the content of webpage.-->
+    <!--These are different kinds of heading below.-->
+    <h1>Heading h1</h1>
+    <h2>Heading h2</h2>
+    <h3>Heading h3</h3>
+
+    <p title="Opening Directions">Open this file in text editor along with browser window, to know more about the HTML language.</p>
+    <!-- The title="Opening Directions" in above <p> opening tag and lang="EN-US" in <html> tag in line 2 is called an attribute,
+         there could be multiple attributes in any tags. These attributes provide additional information about elements in which 
+         they are used to browser and search engines and are used in SEO(search engine optimisation) -->
+    
+    
+    <img src="Here the file path is to be given." height="40" width="54"> <!-- few more attributes. -->
+    
+    
+    <p><b>bold</b></p>
+    <p><strong>strong</strong></p> <!-- Strong is just like bold except it also provide info to search engine, and is used in SEO.-->
+    <p><em>emphasize</em></p> <!-- emphasize is also used in SEO, strong and em tags are introduced for HTML5 -->
+    <p><i>italic</i></p>
+    <p>This is <small>small</small> text.</p>
+    <p>Hello <sup>superscript</sup> text.</p>
+    <p>Hello <sub>subscript</sub> text.</p>
+    <p>Hello <ins>insert</ins> text.</p>
+    <p>Hello <del>delete</del> text.</p>
+    <p><mark>mark</mark></p>
+
+
+<!-- Designing Table in HTML:- -->
+    <table border="1" style="width:10%">
+        <thead> <!-- This is for heading of table columns. -->
+            <th> Head1 </th>
+            <th> Head2 </th>
+            <th> Head3 </th>
+        </thead>
+        <tbody> <!-- This is body of the table. -->
+            <tr> <!-- This is tag for row. -->
+                <td>Column1</td> <!-- td is tag for column. -->
+                <td>Column2</td>
+                <td>Column3</td>
+            </tr>
+                <td>Column4</td>
+                <td>Column5</td>
+                <td>Column6</td>
+            <tr>
+                <td>Column7</td>
+                <td>Column8</td>
+                <td>Column9</td>
+            </tr>
+            <tr>
+                <td>Column10</td>
+                <td>Column12</td>
+                <td>Column13</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<!--Inserting links and images in html-->
+    
+    <!-- Inserting Image -->
+    <h2> here is a picture of a Lion.</h2>
+    <p>
+        <img src="https://i2-prod.mirror.co.uk/incoming/article5480545.ece/ALTERNATES/s615b/lion-photographer.jpg"
+        alt="Lion" width="400px" height="250px">
+        <!-- alt attribute is used in case the image is not found on the link, then instead of image the word 
+            in the alt attribute is mentioned in image box.-->
+        <!-- Image above is from another remote server on internet.-->
+
+       <br><!-- br is for break, works as enter on webpage layout.-->
+
+       <h2> Here is another picture of Lion. </h2>
+       <img src="img test/lion-photographer.jpg" alt="Lion small" width="300px" hieght="175px">
+       <!-- Image here is locally uploaded on the webpage.-->
+    </p>
+
+
+    <!-- Inserting links to some remote server. -->
+    <br><br>
+    <h3> Link to a remote server is below. It will open on the same tab.</h3>
+    <br>
+    <a href="https://www.google.co.in"><h3> Google </h3></a>
+    <br>
+    <h3> Now, this is the same link but it will open on a new tab. </h3>
+    <br>
+    <a href="https://www.google.co.in" target="_blank"><h3> Google </h3></a> 
+    <!-- above, target attribute is used to open the link on a new tab on browser. -->
+
+    <!-- Here is a link to another application webpage on local server-->
+    <br><br>
+    <h3> This link will take you to a local webpage.</h3>
+    <br>
+    <a href="Styling and CSS.html" target="_blank"><h3> Styling and CSS.html </h3></a>
+
+    <!-- Using an image as a link.-->
+    <br>
+    <h3> Below is a lion. Which, when clicked will take you to a link about Lions.</h3>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Lion" target="_blank">
+        <img src="img test/lion-photographer.jpg" alt="Lion small" width="300px" hieght="175px"> 
+    </a><!-- Here we have have inserted an image instead of a name within <a> </a> tag.-->
+    <br>
+
+
+<!-- Ordered and Unordered lists -->
+    <p>
+        <h3>Here is a Description List</h3>
+        <!-- Here is a descripition list below. -->
+        <dl> <!-- Description list tag.-->
+            <dt>Coffee</dt><!-- This is a description title tag.-->
+            <dd>A Drink</dd><!-- This is a description title definition tag.-->
+
+            <dt>Water</dt>
+            <dd>A drink</dd>
+        </dl>
+
+        <h3>Here is an Order List</h3><!-- It provides serial no. on every list item.-->
+        <ol><!--This is tag for order list.-->
+            <li>Number one</li><!-- This is a list item tag -->
+            <li>Number two</li>
+            <li>Number three</li>
+            <li>Number four</li>
+        </ol>
+
+        <h3>Here is an Unordered List</h3><!-- It has bullet points on every item.-->
+        <ul><!-- This is tag for unordered list.-->
+            <li>Number one</li><!-- This is a list item tag -->
+            <li>Number two</li>
+            <li>Number three</li>
+            <li>Number four</li> 
+        </ul>
+
+
+<!-- Block and Inline Elements -->
+        <!-- In HTML some elements are block elements, which means everything within their opening and closing tags will be treated
+        as a single block and will be rendered in a new line in browser. -->
+        <h1><ins>Block and Inline elements.</ins></h1>
+        <h1>Block Elements</h1>
+        <!-- Here are some block elements.-->
+        <h2>Block Head 2</h2><h2>Block Head 2</h2> <!-- Here even though we have written both h2 tags in same line, they will be
+                                                        rendered in different lines in the browser as they are block elements. -->
+        <div>Hello division tag</div>
+        <div>Hello division tag2</div>
+        <p>hello paragraph</p>
+        <form>Hello form tag</form>
+        
+        <br>
+        <h1>Inline Elements</h1>
+        <!-- Here are some inline elements.-->
+        <span>Hello</span>
+        <span>Hello</span>
+        <a href="">Span</a>
+        <img alt="sample image">
+
+
+<!-- Class and ID Selectors -->
+
+
+<!-- Here .container style attributes apply to class "container" and #container style attributes apply to ID "container". -->
+<style>
+    .container{ 
+        color:white;
+        background-color:black;
+        margin: 20px;
+        padding: 20px;
+    }
+    #container{
+        color:aliceblue;
+        background-color:red;
+        margin: 20px;
+        padding: 20px;
+    }
+
+</style>
+        
+        <p><ins>Class and ID Selectors</ins></p>
+        <!-- div element is used just to select and assign class or id otherwise it works same as <p> tags.-->
+        <div class="container"><!-- Here .container style attributes will be applied.-->
+            <h2>Test1</h2>
+            <p>Paragraph 1</p>
+        </div>
+        <div Class="container"><!-- Here .container style attributes will be applied.-->
+            <h2>Test2</h2>
+            <p>Paragraph 2</p>
+        </div>
+        <div id="container"><!-- Here #container style attributes will be applied.-->
+            <h2>Test3</h2>
+            <p>Paragraph 3</p>
+        </div>
+        <div id="container"><!-- Here #container style attributes will be applied.-->
+            <h2>Test4</h2>
+            <p>Paragraph 4</p>
+        </div>
+
+        <h1>Visit https://www.w3schools.com for references about html,js etc.</h1>
+    </p>
+
+</body>
+
+</html>
