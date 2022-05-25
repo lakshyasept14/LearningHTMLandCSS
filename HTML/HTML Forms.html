@@ -66,10 +66,13 @@
     <!-- Form Input Types with their attributes-->
     <h2>Form Attributes- Lecture 3</h2>
     <!--Proper attributes with elements are necessary for implementing proper submission to server.-->
-    <form>
+    <form action="remote_server.php" method="post">
+      <!--Here above action attribute directs to the address where submissioin is to be done, it could be a remote server
+      or a url. After submission user will be redirected to this address. Method attribute shows that data is to be posted 
+      on server. -->
       <fieldset>
         <legend>Form Attributes- The way forms are actually designed.</legend>
-        <p>To see the diffrence please visit the code.</p>
+        <p>To see the difference please visit the code.</p>
         <br>
 
         <label for="testtext">A Text Input</label><!-- This label is associated with id testtext, and can be 
@@ -82,23 +85,38 @@
 
         <br>
         <label for="address">Address</label>
-        <textarea id="address" rows="5" cols="40"></textarea>
+        <textarea id="address" name="address" rows="5" cols="40"></textarea>
 
         <br>
-        <label>A Password Input</label>
-        <input type="password"/>
+        <label for="firstpassword">A Password Input</label>
+        <input id="firstpassword" name="firstpassword" type="password"/>
+        <br>
+
+        <label for="siblings">Number of Siblings</label>
+            <select id="siblings" name="siblings">
+              <option value="none">None</option>
+              <option value="one">One</option> <!--When user select this option value one is submitted to server under name siblings.-->
+              <option value="two">Two</option>
+              <option value="three">Three</option>
+              <option value="four">Four</option>
+              <option value="five">Five</option>
+              <option value="six">Six</option>
+            </select>
         
         <br>
-        <label>Radio Button Inputs</label>
-        <input type="radio">Option1</input>
-        <input type="radio">Option2</input>
-        <input type="radio">Option3</input>
+        <label for="radiobuttons">Radio Button Inputs</label>
+        <input type="radio" id="radiobuttons" name="radiobuttons" value="option1">Option1</input>
+        <input type="radio" id="radiobuttons" name="radiobuttons" value="option2">Option2</input>
+        <input type="radio" id="radiobuttons" name="radiobuttons" value="option3">Option3</input>
         <br>
-        <label>Checkbox Button</label>
-        <input type="checkbox">Option1</input>
-        <input type="checkbox">Option2</input>
-        <input type="checkbox">Option3</input>
+
+        <label for="checkboxes">Checkboxes</label>
+        <input type="checkbox" value="option1" name="option1" checked>Option1</input>
+                   <!--Here above, checked attribute implies that option1 will be checked by default in form.-->
+        <input type="checkbox" value="option2" name="option2">Option2</input>
+        <input type="checkbox" value="option3" name="option3">Option3</input>
         <br>
+
         <label>Button</label>
         <input type="button" value="Button"/>
       </fieldset>
